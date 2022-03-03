@@ -1,61 +1,86 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="background-color: black;">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de equipo</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="shortcut icon" href="img/logo.png">
-</head>
-<body>
+    <title>Países</title>
     
-    <header>
-        <div class="contenedor">
-            <h1><img src="img/logo.png" height="50px" width="50px">  PR&Aacute;CTICAS</h1>
-        </div>
-    </header>
+    <style>
+        
+        footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+        
+        ul {
+    list-style-type: none;/*desactiva viñetas*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*Especifica qué sucede si el contenido
+    del cuadro de un elemento se desborda */
+    background-color: #333;
+}
 
-    <main>
-        <section id="banner">
-            <img src="img/index/banner.jpg">
-            <div class="contenedor">
-                <h2>¡BIENVENIDOS A NUESTRO BLOG!</h2>
-            </div>
-        </section>
+.t {
+    text-align: center;
+    color: aliceblue;
+}
 
-        <section id="bienvenidos">
-            <P>Aqu&iacute; encontrar&aacute;s todas las pr&aacute;cticas de cada integrante del equipo.</P>
-            <p><strong>Da clic en la im&aacute;gen para ver el contenido de cada integrante.</strong></p>
-        </section>
+li {
+    float: left;
+}
 
-        <section id="blog">
-            <h3>Integrantes del equipo</h3><br><br>
-            <div class="contenedor">
-                <article>
-                    <a href="#"><img src="img/index/fatima.jpeg"></a>
-                    <h4>Cort&eacute;s Cort&eacute;s F&aacute;tima</h4>
-                </article>
-                <article>
-                    <a href="menug.html"><img src="img/index/gerardo.jpg"></a>
-                    <h4>Iturribarria Moya Gerardo</h4>
-                </article>
-                <article>
-                    <a href="https://patylo.github.io/menuPatyUnidad1/"><img src="img/index/paty.jpeg"></a>
-                    <h4>L&oacute;pez De los Santos Ana P.</h4>
-                </article>
-                <article>
-                    <a href="#"><img src="img/index/arturo.jpeg"></a>
-                    <h4>Ruiz Dom&iacute;nguez Arturo</h4>
-                </article>
-                <article>
-                    <a href="#"><img src="img/index/usuario.jpg"></a>
-                    <h4>S&aacute;nchez Romero Arturo E.</h4>
-                </article>
-            </div>
-        </section>
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
-    </main>
+li a:hover { /*Cuando pasa el mouse sobre el elemento*/
+    background-color: #f1d517;
+    color:#333;
+}
 
+li a:active { /*Cuando da click en el mouse */
+    background-color: #609acf;
+    font-size: 120%;
+}
+
+li:last-child{
+float: right;
+background-color: rgba(106, 116, 116, 0.69);
+color:white;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li><a href="Mexico.html">M&eacute;xico</a></li>
+        <li><a href="Paris.html">Par&iacute;s</a></li>
+        <li><a href="Tokyo.html">Tokyo</a></li>
+        <li><a href="Londres.html">Londres</a></li>
+        <li><a href="Madrid.html">Madrid</a></li>
+        <li><a href="Amsterdan.html">Amsterdam</a></li>
+        <li><a href="contactanos.html">Redes sociales</a></li>
+        <li><a href="#">Blog Gerardo</a></li><!--Poner liga github-->
+    </ul>
+
+    <h1 class="t" style="color: aliceblue;">¡BIENVENIDO A LA INFORMACI&Oacute;N DE PA&Iacute;SES!</h1>
+    <H4 class="t" style="color: aliceblue;">Aqu&iacute; encontrar&aacute;s informaci&oacute;n sobre algunas ciudades famosas.</H2>
+        <br>
+        
+        <CENTER><img src="img/mundogirando.gif" height="450 px" width="1000 px"></CENTER>
+        <footer>Copyright &copy; itorizaba.edu.mx</footer>
 </body>
+
 </html>
